@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
-* main - Entry point
-* I sometimes suffer from insomnia. And when I can't fall asleep
-* Return: Always 0 (Success)
+*print_alphabet - func to print the alphabet
+*
+*Return: non
 */
 void print_alphabet(void)
 {
