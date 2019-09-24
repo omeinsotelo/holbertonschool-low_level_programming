@@ -8,7 +8,7 @@
 int main(void)
 {
 char H[] = "Holberton";
-int c = sizeof(H);
+int c = sizeof(H) - 1;
 int p = 0;
 
 for ( ; p < c; p++)
