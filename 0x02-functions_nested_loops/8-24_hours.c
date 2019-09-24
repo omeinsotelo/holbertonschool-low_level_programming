@@ -2,7 +2,6 @@
 #include <stdlib.h>
 /**
 * jack_bauer - prints every minute of the day of Jack Bauer
-* @n: the minutes
 *
 * Return: 0;
 */
