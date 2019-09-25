@@ -1,0 +1,15 @@
+#include "holberton.h"
+#include <stdlib.h>
+/**
+* add - adds two integers and returns the result
+* 
+*
+* Return: n
+*/
+int add(int a, int b)
+{
+int n;
+
+n = a + b;
+return (n);
+}
