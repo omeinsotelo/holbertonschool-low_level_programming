@@ -3,36 +3,35 @@
 
 /**
 * print_to_98 - natural numbers from n to 98..
-*@n: the parameter
+*@n: The parameter
 * Return: none
 */
 void print_to_98(int n)
 {
 	int p;
 
-	if (n < 98)
+	if (n > 98)
 	{
-		for (n = p; p <=  98; p++)
+
+		for (p = n; p >= 98; p--)
 		{
-			if (p < 98)
-			{
-				printf("%d", ", ", p);
-			}
+			if (p != 98)
+				printf("%d, ", p);
 			else
 				printf("%d", p);
 		}
 	}
-	else (n > 98)
+	else
 	{
-		for (n = p; p >= 98; p--)
-			if (p > 98)
-			{
-				printf("%d", ", ", p);
-			}
+
+		for (p = n; p <= 98; p++)
+		{
+			if (p != 98)
+				printf("%d, ", p);
 			else
-			{
 				printf("%d", p);
-			}
+		}
 	}
 	printf("\n");
+
 }
