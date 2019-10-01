@@ -1,5 +1,8 @@
 #include <stdio.h>
+<<<<<<< HEAD
 #include "holberton.h"
+=======
+>>>>>>> 15242f5217adef144b493971401e14903a068349
 /**
 * main - Entry point
 *
@@ -7,6 +10,7 @@
 */
 int main(void)
 {
+<<<<<<< HEAD
 	int n;
 	int m;
 	int p;
@@ -25,5 +29,23 @@ int main(void)
 		putchar((n / 10) + '0');
 		putchar('\n');
 		}
+=======
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if ((i % 3) == 0 && (i % 5) == 0)
+			printf("FizzBuzz");
+		else if ((i % 3) == 0)
+			printf("Fizz");
+		else if ((i % 5) == 0)
+			printf("Buzz");
+		else
+			printf("%d", i);
+		if (i < 100)
+			printf(" ");
+	}
+	printf("\n");
+>>>>>>> 15242f5217adef144b493971401e14903a068349
 	return (0);
 }
