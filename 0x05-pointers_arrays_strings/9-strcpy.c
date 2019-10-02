@@ -1,7 +1,6 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- *print_array - function that prints other characters
+ *_strcpy - function that prints other characters
  *@dest: the parameter
  *@src: the parameter
  *Return: none
