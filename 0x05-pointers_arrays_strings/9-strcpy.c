@@ -1,19 +1,20 @@
 #include "holberton.h"
 /**
- *_strcpy - function that prints other characters
- *@dest: the parameter
- *@src: the parameter
- *Return: none
+ * _strcpy - Entry point
+ * Description: function
+ * @dest: parametre to check
+ * @src: parametre to check
+ * Return: always dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	int m = 0;
+	int i = 0;
 
-	while (src[m] != '\0')
+	while (src[i] != '\0')
 	{
-		dest[m] = src[m];
-		if ((src[m + 1] == '\0'))
-			dest[m + 1] = src[m + 1];
+		dest[i] = src[i];
+		if ((src[i + 1] == '\0'))
+			dest[i + 1] = src[i + 1];
 		i++;
 	}
 	return (dest);
