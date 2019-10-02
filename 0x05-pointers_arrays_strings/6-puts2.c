@@ -6,9 +6,13 @@
  */
 void puts2(char *str)
 {
-	int a;
+	int a, b = 0;
 
-	for (a = 0; str[a + 1] != '\0'; a += 2)
+	while (str[b] != '\0')
+	{
+		b++;
+	}
+	for (a = 0; a < b; a += 2)
 	{
 		_putchar(str[a]);
 	}
