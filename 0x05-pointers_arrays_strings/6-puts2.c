@@ -8,7 +8,7 @@ void puts2(char *str)
 {
 	int a;
 
-	for (a = 0; str[a] != '\0'; a++)
+	for (a = 0; str[a + 1] != '\0'; a++)
 	{
 		if ((str[a] - 48) % 2 == 0)
 			_putchar(str[a]);
