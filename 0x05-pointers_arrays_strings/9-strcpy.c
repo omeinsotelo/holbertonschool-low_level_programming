@@ -1,27 +1,21 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- *print_array - function that prints other characters
- *@dest: the parameter
- *@src: the parameter
- *Return: none
+ * _strcpy - Entry point
+ * Description: function
+ * @dest: parametre to check
+ * @src: parametre to check
+ * Return: always dest
  */
 char *_strcpy(char *dest, char *src)
 {
-	int a, t, b;
+	int i = 0;
 
-	b = 0;
-
-	for (a = 0; s[a] != 0; a++)
+	while (src[i] != '\0')
 	{
+		dest[i] = src[i];
+		if ((src[i + 1] == '\0'))
+			dest[i + 1] = src[i + 1];
+		i++;
 	}
-	a--;
-	while (b < a)
-	{
-		t = s[b];
-		s[b] = s[a];
-		s[a] = t;
-		b++;
-		a--;
-	}
+	return (dest);
 }
