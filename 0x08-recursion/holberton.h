@@ -55,4 +55,5 @@ int sqrt_aux(int n, int i);
 int is_prime_number(int n);
 int rec_aux(int n, int x);
 int is_palindrome(char *s);
+int palindrome_aux(char *s, int begin, int end);
 int wildcmp(char *s1, char *s2);

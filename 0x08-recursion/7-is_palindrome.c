@@ -1,31 +1,48 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- * is_prime_number- Entry point
- * Description: function aux
- * @s: the string
- * @n:
- * Return: 1 and 0
+ * _strlen_recursion- Entry point
+ * Description: function that returns the length of a string.
+ * @s: the string to length
+ * Return: length
  */
-int is_prime_number(int n)
+int _strlen_recursion(char *s)
 {
-	if (n <= 1)
+	if (*s == '\0')
 		return (0);
-		return (rec_aux(n, 2));
+		return (1 + _strlen_recursion(s + 1));
 }
-
 /**
- * is_palidrome- Entrry point
- * Description: function that returns 1 if a string is a palindrome and 0 if not.
- * @s: teh string
- * Return: 1, 0.
+ * is_palindrome- Entry point
+ * Description: function that returns 1, 0
+ * @s: the string to compare
+ * Return: 1 , 0.
  */
 int is_palindrome(char *s)
 {
-	if (x == n)
-		return (1);
-	else if (n % x == 0)
-		return (0);
+	int begin, end;
+
+	begin = 0;
+	end = _strlen_recursion(s) - 1;
+
+	return (palindrome_aux(s, begin, end));
+}
+/**
+ * palindrome_aux- Entry point
+ * Description: function aux
+ * @s: the string to compare
+ * @begin: first part of the string
+ * @end: the end of the string
+ * Return: 0 , 1
+ */
+int palindrome_aux(char *s, int begin, int end)
+{
+	if (begin < end)
+	{
+		if (s[begin] == s[end])
+			return (palindrome_aux(s, begin + 1, end - 1));
+		else
+			return (0);
+	}
 	else
-		return (rec_aux(n, x + 1));
+		return (1);
 }
