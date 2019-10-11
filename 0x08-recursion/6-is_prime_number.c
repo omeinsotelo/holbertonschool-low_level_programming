@@ -17,7 +17,7 @@ int is_prime_number(int n)
  * rec_aux- Entrry point
  * Description: Auxiliar Funsion
  * @n: the number
- * @i: the number of iterecion
+ * @x: the number of iterecion
  * Return: -1, 0.
  */
 int rec_aux(int n, int x)
