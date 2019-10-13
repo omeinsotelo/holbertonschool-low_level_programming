@@ -12,6 +12,7 @@ int main(int argc, char *argv[])
 	int c;
 	int a = 0;
 	int s;
+
 	if (argc < 2)
 	{
 		printf("0\n");
