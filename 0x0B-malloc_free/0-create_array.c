@@ -1,10 +1,11 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
- * main - create_array
+ * create_array - entry point
  * @size: unsigned int
- * @c: a specific char
- * Return: NULL,
-*/
+ * @c: specific char
+ * Return: pointer
+ */
 char *create_array(unsigned int size, char c)
 {
 	char *p;
