@@ -14,10 +14,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		return ("");
+		return "";
 	}
 	if (s2 == NULL)
-		return ("");
+	{
+		return "";
+	}
 	for (cont1 = 0; s1[cont1] != '\0'; cont1++)
 	{
 	}
@@ -26,7 +28,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	p = malloc(sizeof(char) * (cont1 + cont2 + 1));
 	if (p == NULL)
-		return (NULL);
+		return ('\0');
 	for (j = 0; j < cont1; j++)
 	{
 		p[j] = s1[j];
