@@ -23,7 +23,7 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-	for (m = 0; m <= (max - min) + 1; m++)
+	for (m = 0; m <= (n); m++)
 	{
 		p[m] = min++;
 	}
