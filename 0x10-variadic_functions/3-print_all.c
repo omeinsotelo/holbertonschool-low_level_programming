@@ -1,8 +1,8 @@
 #include "variadic_functions.h"
 /**
- * check - enter point
- * @str: String 
- * Return: none
+ * check - Prints a string
+ * @str: String to print
+ * Return: Nothing
  */
 
 char *check(char *str)
@@ -13,9 +13,9 @@ char *check(char *str)
 	return (str);
 }
 /**
- * print_all - all text pass
- * @format: the format
- * Return: none
+ * print_all - Sample Text
+ * @format: Sample Text
+ * Return: Nothing
  */
 void print_all(const char * const format, ...)
 {
