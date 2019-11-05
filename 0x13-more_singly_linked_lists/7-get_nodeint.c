@@ -1,8 +1,9 @@
 #include "lists.h"
 /**
- * pop_listint - function that deletes the head node of a list
+ * get_nodeint_at_index - function that returns the nth node of a list.
  * @head: Pointer to the structure
- * Return: value or 0
+ * @index: index of the linked list
+ * Return: node.:
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
@@ -24,5 +25,4 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		}
 	}
 	return (nodo);
-	
 }
