@@ -29,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		free(place);
 		return (0);
 	}
-	validw = write(1, place, validr);
+	validw = write(STDOUT_FILENO, place, validr);
 	if (validw < 0)
 	{
 		close(valido);
