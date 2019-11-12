@@ -10,21 +10,33 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	char *place;
 	int valido, validr, validw;
 
+	if (!filename)
+		return (0);
 	valido = open(filename, O_RDONLY);
 	if (valido < 0)
 		return (0);
 
 	place = malloc(sizeof(char) * letters);
 	if (!place)
+	{
+		close(valido);
 		return (0);
+	}
 
 	validr = read(valido, place, letters);
 	if (validr < 0)
+	{	close(valido);
+		free(place);
 		return (0);
-
+	}
 	validw = write(1, place, validr);
 	if (validw < 0)
+	{
+		close(valido);
+		free(place);
 		return (0);
-
+	}
+	close(valido);
+	free(place);
 	return (validw);
 }
