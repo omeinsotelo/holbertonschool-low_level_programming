@@ -21,12 +21,12 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 	valid = read(valid, place, letters);
-	if (valid == -1)
+	if (valid < 0)
 	{
 		return (0);
 	}
 	valid = write(STDOUT_FILENO, place, valid);
-	if (valid == -1)
+	if (valid < 0)
 	{
 		return (0);
 	}
