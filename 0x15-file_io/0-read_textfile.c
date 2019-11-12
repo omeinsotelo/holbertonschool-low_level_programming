@@ -8,27 +8,27 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *place;
-	int valid;
+	int valido, validr, validw;
 
-	valid = open(filename, O_RDONLY);
-	if (valid == -1)
+	valido = open(filename, O_RDONLY);
+	if (valido < 0)
 	{
 		return (0);
 	}
 	place = malloc(sizeof(char) * letters);
-	if (!place)
+	if (place == NULL)
 	{
 		return (0);
 	}
-	valid = read(valid, place, letters);
-	if (valid < 0)
+	validr = read(valido, place, letters);
+	if (validr < 0)
 	{
 		return (0);
 	}
-	valid = write(STDOUT_FILENO, place, valid);
-	if (valid < 0)
+	validw = write(STDOUT_FILENO, place, validr);
+	if (validw < 0)
 	{
 		return (0);
 	}
-	return (valid);
+	return (validw);
 }
