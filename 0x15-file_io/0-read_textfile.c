@@ -11,7 +11,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int valid;
 
 	valid = open(filename, O_RDONLY);
-	if (valid > 0)
+	if (valid == -1)
 	{
 		return (0);
 	}
@@ -25,7 +25,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		return (0);
 	}
-	valid = write(1, place, valid);
+	valid = write(STDOUT_FILENO, place, valid);
 	if (valid < 0)
 	{
 		return (0);
