@@ -13,7 +13,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (!filename)
 		return (0);
 	valido = open(filename, O_RDONLY);
-	if (valido < 0)
+	if (valido == -1)
 		return (0);
 
 	place = malloc(sizeof(char) * letters);
