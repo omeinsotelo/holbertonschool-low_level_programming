@@ -4,20 +4,20 @@
 #include "lists.h"
 /**
  * add_dnodeint_end - adds a new node at the end of a list
- * @h: the pointer
+ * @head: the pointer to a poiter
  * @n: constant integer
  * Return: the address of the new element, or NULL if it failed
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *new, *cont = *head;
-	
+
 	if (head == NULL)
 		return (NULL);
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 		return (NULL);
-	new->n = n; 
+	new->n = n;
 	if (*head == NULL)
 	{
 		*head = new;
@@ -35,5 +35,4 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		cont = cont->next;
 	}
 	return (new);
-	
 }
