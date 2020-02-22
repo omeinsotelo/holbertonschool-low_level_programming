@@ -9,8 +9,8 @@ def island_perimeter(grid):
     Function that return the mesure perimeter island
     """
     sump = 0
-    for i in range (len(grid)):
-        for j in range (len(grid[0])):
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
             if grid[i][j] == 1:
                 sump += 4
                 if i > 0 and grid[i - 1][j] == 1:
